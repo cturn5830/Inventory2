@@ -1,0 +1,163 @@
+/* Sign in page */
+.loginWrapper{
+    background-color: lightgray;
+    border-radius: 15px;
+    padding:10px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:10%;
+    text-align: center;
+}
+.loginWrapper h1{
+    font-size:3.5rem;
+}
+.loginWrapper button{
+    font-size:1.3rem;
+    border-radius: 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+    border-color: rgb(209, 209, 209);
+}
+/* Add & Remove Buttons*/
+.ADDremove img{
+    width:65px;
+    height: 65px;
+} 
+.ADDremove{
+    border:none;
+    border-radius: 100%;
+    padding:20px;
+    position: relative;
+    transition: 1s;
+}
+.addBTN{
+    transition: 0.2s;
+    background-color: green;
+}
+.addBTN:hover{
+    transition: 0.2s;
+    background-color: rgb(3, 185, 3);
+}
+.removeBTN{
+    transition: 0.2s;
+    background-color: red;
+}
+.removeBTN:hover{
+    transition: 0.2s;
+    background-color: rgb(199, 90, 90);
+}
+.addBTN img{
+rotate: 43deg;
+}
+.addremoveWrapper{
+    position: fixed;
+    bottom:10px;
+    right:10px;
+    display: flex;
+    gap:15px;
+    z-index: 10;
+}
+
+/*Add Tab*/
+#ProductEntriesWrapper{
+    position: fixed;
+    background-color: lightgray;
+    transition: 0.8s;
+    width:100%;
+    height: 100%;
+    z-index: 5;
+}
+
+/*product desc*/
+.prodDescList{
+    border-bottom:solid 2px rgba(0, 0, 0, 0.2) !important;
+    display: flex;
+    align-items: baseline;
+    gap:10px;
+    padding-left: 10px;
+}
+.prodDescList > * {
+    width:100px;
+    border-right: solid 2px rgba(0, 0, 0, 0.2) !important;
+    height: 1em;
+}
+.prodDescList > *:last-of-type{
+    border-right: none !important;
+}
+
+
+.EditProduct{
+    position: fixed;
+    background-color: lightgray;
+    transition: 0.8s;
+    width:100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.editdocBTN{
+    height: 1.5em;
+    border:solid 2px red;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+}
+
+
+.deleteCheck{
+    width: 100vw;
+    margin-left: none;
+    margin-right: none;
+    padding:20px;
+    padding-bottom: 300px;
+    background-color: red;
+    position: fixed;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    order:10;
+}
+
+.notifydelete{
+    position: fixed;
+    top:40%;
+    width:40%;
+    height: 4rem;
+    background-color: red;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+    left:30%;
+    right:30%;
+}
+
+
+.EditProductWrapper{
+    display: flex;
+    flex-direction:row;
+}
+
+.Errorpopup{
+    position: fixed;
+}
+
+
+.orderGuild{
+    display: flex;
+    flex-direction: row;
+    min-width: fit-content;
+}
+.orderGuild>*{
+    width: fit-content;
+    padding:5px 20px;
+    border-right: solid 2px grey;
+}
