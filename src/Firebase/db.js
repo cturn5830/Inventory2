@@ -11,8 +11,6 @@ const firebaseConfig ={
     appId: "1:646321935740:web:cd69df0f583f651c0780f9"
 }
 
-const app = initializeApp(firebaseConfig)
-
 const db = getFirestore();
 
 const inventory = collection(db,'inventory');
