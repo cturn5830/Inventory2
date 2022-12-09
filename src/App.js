@@ -12,7 +12,6 @@ import Inventory from './Components/Inventory';
 import OrdersView from './Components/OrdersView';
 import Choose from './Components/Choose';
 import SignIn from './Components/SignIn';
-import SignOut from './Components/SignOut';
 
 import { Route, Routes } from 'react-router-dom';
 

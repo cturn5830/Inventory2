@@ -1,10 +1,8 @@
 import { useState } from "react";
-import {db, FBorders,inventory } from "../Firebase/db";
-import {updateDoc, doc, addDoc,getDoc, deleteDoc } from "firebase/firestore";
+import {db} from "../Firebase/db";
+import {updateDoc, doc,getDoc, deleteDoc } from "firebase/firestore";
 import 'firebase/compat/firestore';
 import firebase from 'firebase/compat/app';
-import DeleteProduct from "./DeleteProduct";
-import { useEffect } from "react";
 
 export default function EditOrder(props){
     
@@ -16,14 +14,9 @@ export default function EditOrder(props){
     const DocLocate = doc(db,'orders',DocRef)
 
     const [Product, setProduct] = useState(productValue.Product);
-    const [Brand, setBrand] = useState(productValue.Brand);
     const [Amount, setAmount] = useState(productValue.OrderAmount);
     const [Size, setSize] = useState(productValue.Size);
     const [Location, setLocation] = useState(productValue.Location);
-    const [Campaign, setCampaign] = useState(productValue.Campaign);
-    const [SGA, setSGA] = useState(productValue.SGA);
-    const [Retail, setRetail] = useState(productValue.Retail);
-    const [Year, setYear] = useState(productValue.Year);
     const [OriginalDoc, setOriginalDoc] = useState(productValue.Doc_ref);
 
     const ogDocRef= doc(db,'inventory',OriginalDoc)
